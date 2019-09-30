@@ -25,6 +25,7 @@
     <!--主工程包含子模块工厂配置-->
     <modules>
         <module>spring-boot-demo-hello</module>
+        <module>spring-boot-demo-properties</module>
     </modules>
 
        <dependencies>
@@ -53,11 +54,22 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-autoconfigure</artifactId>
             </dependency>
+           <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-configuration-processor</artifactId>
+               <optional>true</optional>
+           </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <scope>test</scope>
             </dependency>
+           <dependency>
+               <groupId>org.projectlombok</groupId>
+               <artifactId>lombok</artifactId>
+               <optional>true</optional>
+           </dependency>
+
         </dependencies>
     <dependencyManagement>   <!--dependencyManagement用于管理依赖版本号-->
 
